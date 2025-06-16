@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.13.5]
+- updating redis.pipelined usage to fix the redis-4.8.1 deprecation.
+
 ## [0.13.4]
 - Removes sadd usage in favor of sadd?
 
