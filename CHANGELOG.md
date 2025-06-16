@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.13.5]
+- updating redis.pipelined usage to fix the redis-4.8.1 deprecation.
+
+## [0.13.4]
+- Removes sadd usage in favor of sadd?
+
 ## [0.13.3]
 - modifies `queuebus:unsubscribe` to decommission only the specified application when passed exactly one argument.
 
