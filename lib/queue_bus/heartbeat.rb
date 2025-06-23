@@ -20,7 +20,7 @@ module QueueBus
 
         ::QueueBus.redis do |redis|
           # return true if we successfully acquired the lock
-          return timeout if redis.setnx(lock_key, timeout)
+          return timeout if redis.set(lock_key, timeout, nx: true)
 
           # see if the existing timeout is still valid and return false if it is
           # (we cannot acquire the lock during the timeout period)
